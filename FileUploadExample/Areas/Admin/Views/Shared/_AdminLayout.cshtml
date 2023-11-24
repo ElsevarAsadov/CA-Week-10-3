@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   @*  NAVBAR *@
+    <nav  class="navbar navbar-expand-lg navbar-light bg-body-tertiary border-bottom">
+      
+        <div class="container-fluid">
+       
+            <button data-mdb-collapse-init
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <i class="bi bi-list"></i>
+            </button>
+
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               
+                <a class="navbar-brand mt-2 mt-lg-0 font-weight-bold me-4 d-none d-lg-block" href="#">
+                    <i class="bi bi-key me-2"></i>Adminstration
+                </a>
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Slider
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Slider" asp-action="Show">Show</a></li>
+                            <li><a class="dropdown-item" asp-controller="Slider" asp-action="Create">Create</a></li>
+                        </ul>
+                    </li>
+                </ul>
+             
+            </div>
+           
+        
+            <div class="d-flex align-items-center" style="width: 200px">
+
+
+                <div class="dropdown me-auto">
+                    <button class="btn btn-secondary dropdown-toggle" href="#" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false"
+                    data-bs-offset="40,20"
+                    data-bs-target="#profileDropDownMenu">
+                        <i class="bi bi-bell-fill"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </button>
+
+                    <ul class="dropdown-menu" id="#profileDropDownMenu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+              
+                <a>
+                   
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                             class="rounded-circle"
+                             height="50"
+                             alt="Black and White Portrait of a Man"
+                             loading="lazy" />
+                   
+                </a>
+            </div>
+           
+        </div>
+      
+    </nav>
+ 
+
+            @RenderBody()
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@model List<SliderModel>
+
+@{
+    ViewData["Title"] = "Slides";
+}
+
+<main class="container p-3">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Upper Text</th>
+                <th scope="col">Middle Text</th>
+                <th scope="col">Bottom Text</th>
+                <th scope="col">Buttom Text</th>
+                <th scope="col">Image</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(SliderModel _model in Model)
+            {
+                <tr>
+                    <td scope="row">@_model.Id</td>
+                    <th scope="row">@_model.UpperText</th>
+                    <td scope="row">@_model.BottomText</td>
+                    <td scope="row">@_model.ButtonText</td>
+                    <td scope="row">
+                        <img src="@_model.ImagePath" class="d-block" style="height: 50px;"/>
+                        </td>
+                    <td scope="row" class="d-flex gap-4 align-items-center w-full">
+                        <a asp-controller="Slider" asp-action="Update" asp-route-id="@_model.Id">
+                            <button type="button" class="btn bg-warning text-white">Update</button>
+                        </a>
+                        <form method="POST" asp-action="Delete" asp-controller="Slider" asp-route-id="@_model.Id">
+                            <button type="submit" class="btn bg-danger text-white">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+
+</main>

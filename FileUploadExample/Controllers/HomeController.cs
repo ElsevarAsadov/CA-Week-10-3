@@ -1,21 +1,34 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Areas.Admin.Data;
+using WebApplication1.Areas.Admin.Models;
+using WebApplication1.Helpers;
 using WebApplication1.Models;
 
 namespace FileUploadExample.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly AdminDbContext _context;
+    private readonly IWebHostEnvironment _env;
+    public HomeController(AdminDbContext context, IWebHostEnvironment env)
     {
-        _logger = logger;
+        _context = context;
+        _env = env;
     }
 
     public IActionResult Index()
     {
-        return View();
+
+        List<SliderModel> models = _context.Slider.ToList();
+
+        foreach(SliderModel i in models)
+        {
+            i.ImagePath = Utils.ConvertAbsToURI(_env.WebRootPath, i.ImagePath);
+        }
+
+
+        return View(models);
     }
     
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -2885,19 +2885,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Es\\.nuget\\packages\\": {}
+    "C:\\Users\\l novbe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Es\\Desktop\\CA-Week-10-1\\FileUploadExample\\FileUploadExample.csproj",
+      "projectUniqueName": "C:\\Users\\l novbe\\Desktop\\CA-Week-10-3\\FileUploadExample\\FileUploadExample.csproj",
       "projectName": "FileUploadExample",
-      "projectPath": "C:\\Users\\Es\\Desktop\\CA-Week-10-1\\FileUploadExample\\FileUploadExample.csproj",
-      "packagesPath": "C:\\Users\\Es\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Es\\Desktop\\CA-Week-10-1\\FileUploadExample\\obj\\",
+      "projectPath": "C:\\Users\\l novbe\\Desktop\\CA-Week-10-3\\FileUploadExample\\FileUploadExample.csproj",
+      "packagesPath": "C:\\Users\\l novbe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\l novbe\\Desktop\\CA-Week-10-3\\FileUploadExample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Es\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\l novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2957,7 +2957,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -31328,12 +31328,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\FileUploadExample.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\git_ppf-[5e2bb2f5-ce71-4384-b345-e72df5bb813f].jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Asif Generator-[09ef8a94-0440-448c-abd2-26d5c6297dee].jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FileUploadExample</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/FileUploadExample</BasePath>
-      <RelativePath>images/git_ppf-[5e2bb2f5-ce71-4384-b345-e72df5bb813f].jpg</RelativePath>
+      <RelativePath>images/Asif Generator-[09ef8a94-0440-448c-abd2-26d5c6297dee].jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -31342,7 +31342,23 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\git_ppf-[5e2bb2f5-ce71-4384-b345-e72df5bb813f].jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Asif Generator-[09ef8a94-0440-448c-abd2-26d5c6297dee].jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\git_ppf-[a9c3ffae-8872-4bfd-9b32-e810da757eb5].jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileUploadExample</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileUploadExample</BasePath>
+      <RelativePath>images/git_ppf-[a9c3ffae-8872-4bfd-9b32-e810da757eb5].jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\git_ppf-[a9c3ffae-8872-4bfd-9b32-e810da757eb5].jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
